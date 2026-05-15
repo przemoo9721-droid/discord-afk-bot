@@ -9,10 +9,10 @@ const client = new Client({
 });
 
 // Wklej tutaj token bota
-const TOKEN = 'PASTE_BOT_TOKEN_HERE';
+const TOKEN = process.env.TOKEN;
 
 // Wklej tutaj ID kanału AFK
-const AFK_CHANNEL_ID = 'PASTE_AFK_CHANNEL_ID_HERE';
+const AFK_CHANNEL_ID = process.env.AFK_CHANNEL_ID;;
 
 client.once('ready', () => {
     console.log(`Zalogowano jako ${client.user.tag}`);
